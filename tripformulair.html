@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunisia Trip </title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> Plan Your Tunisia Trip</h1>
+            <p>Discover the beauty of Tunisia</p>
+        </div>
+
+        <form onsubmit="window.alert('Thank you for you submition , we will call you soon ')">
+            <fieldset>
+                <legend> Personal Information</legend>
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </td>
+                        <td>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+216 XX XXX XXX">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend> Trip Details</legend>
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <label for="destination">Destination <span class="required">*</span></label>
+                            <select id="destination" name="destination" required>
+                                <option value="">-- Select a destination --</option>
+                                <option value="tunis">Tunis</option>
+                                <option value="carthage">Carthage</option>
+                                <option value="sidi-bou-said">Sidi Bou Said</option>
+                                <option value="hammamet">Hammamet</option>
+                                <option value="sousse">Sousse</option>
+                                <option value="kairouan">Kairouan</option>
+                                <option value="djerba">Djerba Island</option>
+                                <option value="tozeur">Tozeur</option>
+                                <option value="sahara">Sahara Desert</option>
+                                <option value="douz">Douz</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="start-date">Start Date <span class="required">*</span></label>
+                            <input type="date" id="start-date" name="start-date" required>
+                        </td>
+                        <td>
+                            <label for="end-date">End Date <span class="required">*</span></label>
+                            <input type="date" id="end-date" name="end-date" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="travelers">Number of Travelers <span class="required">*</span></label>
+                            <select id="travelers" name="travelers" required>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7">7 People</option>
+                                <option value="8">8+ People</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="accommodation">Accommodation Type <span class="required">*</span></label>
+                            <select id="accommodation" name="accommodation" required>
+                                <option value="hotel">Hotel</option>
+                                <option value="resort">Resort</option>
+                                <option value="guesthouse">Guest House</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="riad">Traditional Riad</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend> Activities & Interests</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="activities" value="beach">
+                                Beach & Relaxation
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="activities" value="historical">
+                                Historical Sites
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="activities" value="safari">
+                                Desert Safari
+                            </label>
+                        </td>
+                        <td>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="activities" value="cuisine">
+                                Local Cuisine Tours
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="activities" value="shopping">
+                                Shopping & Souks
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="activities" value="water-sports">
+                                Water Sports
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend> Additional Information</legend>
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <label for="comments">Special Requirements or Comments</label>
+                            <textarea id="comments" name="comments" placeholder="Tell us about any dietary restrictions, accessibility needs, special occasions, or other preferences..."></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <div class="button-row">
+                <input type="submit" value="Submit Trip Request">
+                <input type="reset" value="Clear Form">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}   
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*background: linear-gradient(14deg, #f26060 0%, #ffffff 100%);*/
+    background-color: #ffffff;
+
+}   
+nav {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}   
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}   
+nav li {
+    margin: 0;
+}   
+nav a {
+    display: block;
+    padding: 1.2rem 2rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}   
+nav a:hover {
+    color: #ff0008;
+    border-bottom: 3px solid #e31e24;
+    background: rgba(227, 30, 36, 0.05);
+}   
+header {
+    background-color:#e31e24;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}   
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}   
+header p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}   
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    gap: 3rem;
+}
+.description {
+    flex: 1;
+}
+.description h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #8b0000;
+    margin-bottom: 1rem;
+}
+.divider {
+    width: 60px;
+    height: 3px;
+    background: #c1121f;
+    margin-bottom: 1.5rem;
+}
+.description p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #555;
+    max-width: 520px;
+}
+.img-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.img-section img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+.thing-to-do {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff5f5;
+    border-radius: 16px;
+}
+.thing-to-do h2 {
+    color: #8b0000;
+    margin-bottom: 1rem;
+}
+.thing-to-do ul {
+    list-style: none;
+}
+.thing-to-do li {
+    padding-left: 1.5rem;
+    margin: 0.7rem 0;
+    position: relative;
+}   
+.video {
+    text-align: center;
+    margin: 4rem auto;
+}
+.video h2 {
+    color: #8b0000;
+    margin-bottom: 1.2rem;
+}
+.video video {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #e31e24;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}  
