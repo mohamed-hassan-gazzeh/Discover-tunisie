@@ -13,7 +13,7 @@
             <p>Discover the beauty of Tunisia</p>
         </div>
 
-        <form onsubmit="window.alert('Thank you for you submition , we will call you soon ')">
+        <form onsubmit="return validateForm()">
             <fieldset>
                 <legend> Personal Information</legend>
                 <table>
@@ -144,10 +144,27 @@
             </fieldset>
 
             <div class="button-row">
-                <input type="submit" value="Submit Trip Request">
+                <input type="submit" value="Submit Trip Request" onclick="validateForm">
                 <input type="reset" value="Clear Form">
             </div>
         </form>
     </div>
+    <div id="infoBox">
+
+    </div>
+    <script>
+   function validateForm() {
+    const startDate = document.getElementById("start-date");
+    const endDate = document.getElementById("end-date");
+
+    if (endDate.value < startDate.value) {
+        alert("End date must be after start date ! Please select valid dates.");
+        return false;
+    }
+
+    alert("Thank you for your submission, we will contact you very soon! ");
+    return true;}
+    </script>
+    
 </body>
 </html>
